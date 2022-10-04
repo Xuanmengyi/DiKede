@@ -1,8 +1,8 @@
-import Home from '@/Home'
+import layout from '@/layout'
 export default {
   path: '/vm',
   name: 'vm',
-  component: Home,
+  component: layout,
   meta: { title: '设备管理', icon: 'el-icon-s-grid' },
   children: [
     {

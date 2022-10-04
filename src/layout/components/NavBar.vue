@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import rightMenu from '@/Home/components/rightMenu'
+import rightMenu from '@/layout/components/rightMenu'
 export default {
   components: {
     rightMenu

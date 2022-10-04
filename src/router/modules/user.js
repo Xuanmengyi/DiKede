@@ -1,8 +1,8 @@
-import Home from '@/Home'
+import layout from '@/layout'
 export default {
   path: '/user',
   name: 'user',
-  component: Home,
+  component: layout,
   meta: { title: '人员管理', icon: 'el-icon-user-solid' },
   children: [
     {

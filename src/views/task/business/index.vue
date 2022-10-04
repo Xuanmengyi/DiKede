@@ -1,5 +1,5 @@
 <template>
-  <div><button type="reset"></button></div>
+  <div><button type="reset">12312</button></div>
 </template>
 
 <script>

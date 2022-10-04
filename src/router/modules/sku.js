@@ -1,8 +1,8 @@
-import Home from '@/Home'
+import layout from '@/layout'
 export default {
   path: '/sku',
   name: 'sku',
-  component: Home,
+  component: layout,
   meta: { title: '商品管理', icon: 'el-icon-s-help' },
   children: [
     {

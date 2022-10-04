@@ -1,13 +1,13 @@
-import Home from '@/Home'
+import layout from '@/layout'
 export default {
-  path: '/report',
+  path: '/report/index',
   name: 'report',
-  component: Home,
+  component: layout,
   children: [
     {
       path: '',
       component: () => import('@/views/report'),
-      meta: { title: '订单管理', icon: 'el-icon-s-finance' }
+      meta: { title: '对账统计', icon: 'el-icon-s-finance' }
     }
   ]
 }

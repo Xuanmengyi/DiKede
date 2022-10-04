@@ -1,8 +1,8 @@
-import Home from '@/Home'
+import layout from '@/layout'
 export default {
-  path: '/order',
+  path: '/order/index',
   name: 'order',
-  component: Home,
+  component: layout,
   children: [
     {
       path: '',

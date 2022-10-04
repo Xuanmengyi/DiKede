@@ -1,8 +1,8 @@
-import Home from '@/Home'
+import layout from '@/layout'
 export default {
-  path: '/policy',
+  path: '/policy/index',
   name: 'policy',
-  component: Home,
+  component: layout,
   children: [
     {
       path: '',

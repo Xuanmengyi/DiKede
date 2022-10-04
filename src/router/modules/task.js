@@ -1,8 +1,8 @@
-import Home from '@/Home'
+import layout from '@/layout'
 export default {
   path: '/task',
   name: 'task',
-  component: Home,
+  component: layout,
   meta: { title: '工单管理', icon: 'el-icon-s-claim' },
   children: [
     {

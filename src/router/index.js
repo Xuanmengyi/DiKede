@@ -8,7 +8,7 @@ import vmRouter from './modules/vm'
 import policyRouter from './modules/policy'
 import orderRouter from './modules/order'
 import reportRouter from './modules/report'
-import Home from '@/Home'
+import layout from '@/layout'
 Vue.use(Router)
 const asyncRoutes = [taskRouter, nodeRouter, vmRouter, userRouter, skuRouter, policyRouter, orderRouter, reportRouter]
 /* Layout */
@@ -39,7 +39,7 @@ const asyncRoutes = [taskRouter, nodeRouter, vmRouter, userRouter, skuRouter, po
 export const constantRoutes = [
   // {
   //   path: '/',
-  //   redirect: '/home'
+  //   redirect: '/layout'
   // },
   {
     path: '/login',
@@ -48,12 +48,12 @@ export const constantRoutes = [
   },
   {
     path: '/',
-    component: Home,
+    component: layout,
     redirect: '/home',
     children: [{
       path: 'home',
-      name: 'Home',
-      component: () => import('@/Home'),
+      name: 'home',
+      component: () => import('@/views/home/index'),
       meta: { title: '帝可得', icon: 'el-icon-s-home' }
     }]
   },

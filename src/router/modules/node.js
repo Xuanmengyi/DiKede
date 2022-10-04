@@ -1,8 +1,8 @@
-import Home from '@/Home'
+import layout from '@/layout'
 export default {
   path: '/node',
   name: 'node',
-  component: Home,
+  component: layout,
   meta: { title: '点位管理', icon: 'el-icon-s-promotion' },
   children: [
     {

@@ -1,5 +1,5 @@
 <template>
-  <div :class="{'has-logo':showLogo}">
+  <div class="box">
     <logo v-if="showLogo" :collapse="isCollapse" />
     <el-scrollbar wrap-class="scrollbar-wrapper" style="margin-bottom:-15px;margin-right:15px;">
       <el-menu
@@ -14,12 +14,11 @@
 
 <script>
 import { mapGetters } from 'vuex'
-import Logo from './Logo'
 import SidebarItem from './SidebarItem'
 import variables from '@/styles/variables.scss'
 
 export default {
-  components: { SidebarItem, Logo },
+  components: { SidebarItem },
   computed: {
     ...mapGetters([
       'sidebar'
@@ -49,6 +48,10 @@ export default {
 }
 </script>
 <style lang="scss">
+  .box{
+    width: 167px;
+    float: left;
+  }
   .el-menu{
     border: 0;
     border-bottom: 0;
@@ -62,7 +65,7 @@ export default {
   .el-scrollbar{
     width: 167px !important;
     height: 100%;
-    margin-top: 15px;
+    margin-top: 65px;
   }
   .el-submenu__icon-arrow{
     right:0;
