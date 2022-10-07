@@ -1,7 +1,7 @@
 <template>
   <div class="main-container">
-      123123123123123123123
-    </div>
+    123123123123123123123
+  </div>
 </template>
 
 <script>
@@ -21,7 +21,7 @@ export default {
     padding-top: 60px;
     margin-left: 167px;
     position: relative;
-    background-color: red;
+    /* background-color: red; */
     overflow: hidden;
     z-index: 999;
 }
